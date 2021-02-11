@@ -1,0 +1,27 @@
+<main class="page">
+
+  <div class="header">
+    <h1>Current Grocery Lists</h1>
+  </div>
+
+  <div *ngFor="let list of groceryList; index as i">
+    <h3> {{list.listName}}</h3>
+    <table class="grocery-list">
+    <tr class="head-row">
+      <td>Item Id</td>
+      <td>Item Name</td>
+      <td>Price</td>
+      <td>Type</td>
+    </tr>
+    <div *ngFor="let item of list.items; index as i" class="item-list">
+      <tr class="item-row">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.type}}</td>
+      </tr>
+    </div>
+    </table>
+  </div>
+</main>
+

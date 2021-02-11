@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  color:aqua
+}
+
+.header {
+  background-color: black;
+  padding-bottom: 20px;
+}
+
+.page {
+  background-color: darkgray;
+}
+
+.grocery-list {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.head-row {
+  width: auto;
+}
+
+.item-row {
+  width: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 25%;
+}
